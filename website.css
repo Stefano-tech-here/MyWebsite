@@ -1,0 +1,151 @@
+p{
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body{
+  padding:10px;
+  margin: 10px;
+  background-color: lightblue;
+}
+/*------------HOMEPAGE CODE-----------------*/
+.home-button{
+  font-size: 20px;
+  color:black;
+  background-color:beige;
+  height: 36px;
+  width: 105px;
+  cursor: pointer;
+  margin-left: 8px;
+  border: none;
+  border-radius: 18px;
+}
+
+.about-me-button{
+  font-size: 20px;
+  color:black;
+  background-color:beige;
+  height: 36px;
+  width: 155px;
+  cursor: pointer;
+  margin-left: 8px;
+  border: none;
+  border-radius: 18px;
+}
+
+.skills-button{
+  font-size: 20px;
+  color:black;
+  background-color:beige;
+  height: 36px;
+  width: 105px;
+  cursor: pointer;
+  margin-left: 8px;
+  border: none;
+  border-radius: 18px;
+}
+
+.contact-button{
+  font-size: 20px;
+  color:black;
+  background-color:beige;
+  height: 36px;
+  width: 125px;
+  cursor: pointer;
+  margin-left: 8px;
+  border: none;
+  border-radius: 18px;
+}
+
+.check-work-button{
+  font-size: 20px;
+  color:black;
+  background-color:beige;
+  height: 36px;
+  width: 500px;
+  cursor: pointer;
+  margin-left: 8px;
+  border: none;
+  border-radius: 18px;
+}
+
+.home-button:hover{
+  background-color: brown;
+  color: white;
+}
+
+.about-me-button:hover{
+  background-color: brown;
+  color: white;
+}
+
+.skills-button:hover{
+  background-color: brown;
+  color: white;
+}
+.contact-button:hover{
+  background-color: brown;
+  color: white;
+}
+
+.check-work-button:hover{
+  background-color: brown;
+  color: white;
+}
+
+.slider-frame{
+  overflow: hidden;
+  height: 900px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
+/*------SLIDE ANIMATION------*/
+@-webkit-keyframes slide_animation{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:1200px;}
+  30% {left:1200px;}
+  40%{left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left: 0px;}
+}
+
+.slide-images{
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+
+}
+
+.img-container{
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+
+}
+
+/*-------END OF ANIMATION PART-------*/
+/*-----------------END OF HOMEPAGE CODE---------------*/
+/*---------START OF ABOUT ME PAGE CODE-----------------*/
+
+.more-info-text{
+  font-family: arial;
+
+}
+.resume{
+  font-family: arial;
+}

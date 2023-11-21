@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Learn more about me</title>
+<meta name="description" content="Learn more about me personally and how I started in the world of programming."/>
+<link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+  <center>
+    <button class="home-button" onclick="location. href='file:///C:/Users/s.ukandu/Desktop/My%20Website/index.html'">
+    HOME
+  </button>
+  <button class="about-me-button" onclick="location. href='file:///C:/Users/s.ukandu/Desktop/My%20Website/aboutme.html'">
+    ABOUT ME
+  </button>
+  <button class="skills-button" onclick="location. href='file:///C:/Users/s.ukandu/Desktop/My%20Website/skills.html'">
+    SKILLS
+  </button>
+  <button class="contact-button" onclick="location. href='file:///C:/Users/s.ukandu/Desktop/My%20Website/contacts.html'">
+    CONTACT
+  </button>
+  <br>
+  <br>
+  <br>
+  <img src="images/stefano-photo.png" class="img-fluid" alt="photo of Stefano">
+</center>
+
+<h1 style="text-align: center;">
+  <p class="learn-about-me">🌟My skills🌟</p></h1>
+
+<p>
+  <h3 style="text-align: center;"><p class="subtitle-about-me">I'm a self taught Web Developper</p></h3> <br>
+  <center><p class="more-info-text">
+    I've worked in the field of Online Marketing for over 5 years and now want to dive into Web Development.
+  </p></center>
+  <br>
+
+<h2 style="text-align: center;"><p class="html">
+  HTML
+</p>
+</h2>
+<br>
+<br>
+<p style="text-align: center;">
+  I've used my skills in HTML to setup this website. I still got a lot to learn but I'm sure with time I'll be very proficent with this programming language.
+</p>
+<center>
+<img src="images/html.png" class="img-fluid" alt="HTML logo">
+</center>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;"><p class="css">
+  CSS
+</p>
+</h2>
+<br>
+<br>
+<p style="text-align: center;">
+  I've used my skills in CSS to setup the estetics of this website. I still got a lot to learn but I'm sure with time I'll be very proficent with this programming language.
+</p>
+<br>
+<br>
+
+<center>
+  <img src="images/css.png" class="img-fluid" alt="CSS logo">
+  </center>
+  <br>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><p class="java">
+    JAVA
+  </p>
+  </h2>
+  <br>
+  <br>
+  <p style="text-align: center;">
+    I've used my skills in Java to setup the following little game below. I still got a lot to learn but I'm sure with time I'll be very proficent with this programming language.<br>
+    Enjoy! 
+  </p>
+  <br>
+<br>
+  <center>
+  <img src="images/java.png" class="img-fluid" alt="Java logo">
+  </center>
+  <br>
+  <br>
+<center>
+  <h4 class="instructions">INSTRUCTIONS</h4>
+  <br>
+  <br>
+  <p class="info-instructions">
+    The following program will give you a different result based on the age you enter.
+    <br>
+    The ages that trigger a different response are:<br>
+    below 18 years old, between 18 and 26 years old, over 26 years old.<br>
+    Please give it a try :)  
+  </p>
+  <br>
+  <br>
+  <br>
+
+</center>
+
+
+<!--The following is for the Java program-->
+
+
+
+
+<center>
+  <label for="ageInput">Enter your age please:</label>
+  <input type="number" id="ageInput">
+  <button onclick="checkAge()">Check Age</button>
+  <p id="result"></p>
+
+  <script>
+      function checkAge() {
+          const ageInput = document.getElementById('ageInput').value;
+          const age = parseInt(ageInput);
+
+          const resultElement = document.getElementById('result');
+
+          if (isNaN(age)) {
+              resultElement.textContent = "Please enter a valid age.";
+          } else if (age < 18) {
+              resultElement.textContent = "You are underage. You are only " + age;
+          } else {
+              resultElement.textContent = "You are an adult. You are already " + age + " go get a job!";
+              if (age > 26) {
+                  resultElement.textContent += " You should already know that!";
+              }
+          }
+      }
+  </script>
+  
+
+
+</html>
